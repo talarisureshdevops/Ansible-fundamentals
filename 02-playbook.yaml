@@ -1,0 +1,25 @@
+- name: Hello world
+  hosts: local
+  connection: local
+  tasks:
+  - name: print hello world
+    ansible.builtin.debug:
+    msg: "Hello world all"
+
+- name: Hello banglore
+  hosts: local
+  connection: local
+  tasks:
+  - name: print hello banglore
+    ansible.builtin.debug:
+    msg: "Hello banglore all"
+
+- name: Hello hyderabad
+  hosts: local
+  connection: local
+  tasks:
+  - name: "print hello hyderabad"
+    ansible.builtin.debug:
+    msg: "hello hyderabad"
+
+  

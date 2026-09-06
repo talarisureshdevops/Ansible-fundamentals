@@ -4,7 +4,7 @@
   tasks:
   - name: print hello world
     ansible.builtin.debug:
-    msg: "Hello world all"
+      msg: "Hello world all"
 
 - name: Hello banglore
   hosts: local
@@ -12,7 +12,7 @@
   tasks:
   - name: print hello banglore
     ansible.builtin.debug:
-    msg: "Hello banglore all"
+      msg: "Hello banglore all"
 
 - name: Hello hyderabad
   hosts: local
@@ -20,6 +20,6 @@
   tasks:
   - name: print hello hyderabad
     ansible.builtin.debug:
-    msg: "hello hyderabad"
+      msg: "hello hyderabad"
 
   

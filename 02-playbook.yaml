@@ -2,24 +2,24 @@
   hosts: local
   connection: local
   tasks:
-    - name: print hello world
-      ansible.builtin.debug:
-      msg: "Hello world all"
+  - name: print hello world
+    ansible.builtin.debug:
+    msg: "Hello world all"
 
 - name: Hello banglore
   hosts: local
   connection: local
   tasks:
-    - name: print hello banglore
-      ansible.builtin.debug:
-      msg: "Hello banglore all"
+  - name: print hello banglore
+    ansible.builtin.debug:
+    msg: "Hello banglore all"
 
 - name: Hello hyderabad
   hosts: local
   connection: local
   tasks:
-    - name: "print hello hyderabad"
-      ansible.builtin.debug:
-      msg: "hello hyderabad"
+  - name: print hello hyderabad
+    ansible.builtin.debug:
+    msg: "hello hyderabad"
 
   

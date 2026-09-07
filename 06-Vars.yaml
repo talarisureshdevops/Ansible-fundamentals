@@ -1,0 +1,12 @@
+- name: task level variables
+  hosts: local
+  connection: local
+  var_files:
+  - course.yaml
+  tasks:
+  - name: print the variables
+    vars: 
+      COURSE: ansible
+    ansible.builtin.debug:
+      msg: "course is {{ COURSE}}, the trainer is {{ TRAINER}}"
+      

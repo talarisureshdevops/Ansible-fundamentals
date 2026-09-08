@@ -1,0 +1,10 @@
+- name: check the number greater than 10 or not
+  hosts: local
+  conditions: local
+  vars:
+    no_of_sessions: 7
+  tasks:
+  - name: check the given number greater than 7 or not
+    ansible.builtin.debug:
+      msg: "yes, the given number grater 7"
+    when: no_of_sessions>5

@@ -4,7 +4,7 @@
   vars:
     PROGRAM: "Devsecops with AWS"
     DURATION: 140
-    IS_LIVE: true
+    is_live: true
     Details:
       MONTHS: 4
       TRAINER: "Sivakumar Reddy"

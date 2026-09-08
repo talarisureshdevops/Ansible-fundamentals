@@ -18,7 +18,7 @@
       msg: | 
         program: {{ PROGRAM }}
         duration: {{ DURATION }}
-        is_live?: {{ IS_LIVE }}
+        is_live?: {{ is_live }}
         details: {{ Details }}
         topics: {{ topics }}
 

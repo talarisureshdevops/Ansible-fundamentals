@@ -8,7 +8,7 @@
       name: "{{ item }}"
       state: present
     loop:
-    - mysqld
+    - mysql-server
     - nginx
     # - zip
   - name: start service mysql

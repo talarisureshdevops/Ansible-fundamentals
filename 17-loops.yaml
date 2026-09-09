@@ -11,5 +11,21 @@
     - mysql-server
     - nginx
     - zip
+  - name: start service mysql
+    ansible.builtin.service:
+      name: mysql-server
+      state: started
+      enabled: yes
+  - name: start service nginx
+    ansible.builtin.server:
+      name: nginx
+      state: started
+      enabled: yes
+  - name: start service zip
+    ansible.builtin.service:
+      name: zip
+      state: started
+      enabled: yes
+      
 
-    
+  

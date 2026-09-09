@@ -8,24 +8,24 @@
       name: "{{ item }}"
       state: present
     loop:
-    - mysql-server
+    - mysqld
     - nginx
-    - zip
+    # - zip
   - name: start service mysql
     ansible.builtin.service:
-      name: mysql-server
+      name: mysqld
       state: started
       enabled: yes
   - name: start service nginx
-    ansible.builtin.server:
+    ansible.builtin.service:
       name: nginx
       state: started
       enabled: yes
-  - name: start service zip
-    ansible.builtin.service:
-      name: zip
-      state: started
-      enabled: yes
-      
+  # - name: start service zip
+  #   ansible.builtin.service:
+  #     name: zip
+  #     state: started
+  #     enabled: yes
+
 
   

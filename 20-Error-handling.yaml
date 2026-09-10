@@ -1,0 +1,15 @@
+- name: demo on error handling
+  hosts: local
+  connection: local
+  become: yes
+
+  tasks:
+  - name: check user existing or not
+    ansible.builtin.command: id roboshop
+    register: user_input
+    ignore_errors: yes
+
+  - name: print the output
+    ansible.builtin.debug:
+      msg: "{{ user_input }}"
+  
